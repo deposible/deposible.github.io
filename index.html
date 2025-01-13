@@ -6,7 +6,7 @@
             height: 100%
         }
         pre {
-            color: white
+            color: black,
         }
         h1 {
             color: white;
@@ -22,54 +22,81 @@
         }
         button {
             width: 80%;
+            text-wrap: true;
         }
         div {
             padding: 25px;
             justify-content: center;
             align-items: center;
+            display: flex;
+            flex-direction: column;
         }
     </style>
 
     <head>
         <title>Aussie Studios</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description">
+        <meta name="description" content="Best Roblox Hack Script 2025, 2024 AUSSIE WIRE Supports: Blox Burg, Murder Mystery 2, Evade, Blade Ball, Driving Empire, Fisch, Grace, Pet Simulator 99, Project Lazarus, Restaurant Tycoon 2, Gut & Blackpowder & MORE!">
         <meta name="keywords">
         <meta name="author" content="deposible @ Aussie WIRE & Aussie WIRE Studios">
     </head>
 
     <body>
         <div id="AussieWire">
-            <h1>Aussie WIRE v2.11.1</h1>
+            <h1>Aussie WIRE</h1>
         </div>
 
-        <h1>Exposed Aussie WIRE v1.0.0</h1>
+        <h1>Exposed Aussie WIRE</h1>
         <div id="ExposedAussieWire"></div>
 
         <footer>
-            <pre style="text-align:center">Coded by deposible! join our discord: https://discord.gg/ymguJ6kQNK</pre>
+            <pre style="text-align:center;color:white">Coded by deposible! join our discord: https://discord.gg/ymguJ6kQNK</pre>
         </footer>
 
         <script>
             fetch('data/aussiewire.json').then(response => response.json()).then(data => {
-                const putIn = document.getElementById('AussieWire');
+                const Parent = document.getElementById('AussieWire')
 
                 Object.entries(data).forEach(([key, value]) => {
-                    const pre = document.createElement('button');
-                    pre.textContent = `${key} - ${data[key]["Features"]} (Press For Game Link)`
-                    pre.onclick = () => window.open(data[key]["Game-Link"])
-                    putIn.appendChild(pre);
+                    const Button = document.createElement('button')
+                    const Features = document.createElement('pre')
+
+                    let FeaturesText = ""
+
+                    Object.entries(data[key]["Features"]).forEach(([k, v]) => {
+                        FeaturesText = `${k} - ${v}\n`+FeaturesText
+                    })
+
+                    Button.textContent = `${key} - (Press For Game Link)`
+                    Button.onclick = () => window.open(data[key]["Game-Link"])
+                    
+                    Features.textContent = FeaturesText
+                    
+                    Parent.appendChild(Button);
+                    //Button.appendChild(Features)
                 })
             })
 
             fetch('data/exposedaussiewire.json').then(response => response.json()).then(data => {
-                const putIn = document.getElementById('ExposedAussieWire');
+                const Parent = document.getElementById('ExposedAussieWire')
 
                 Object.entries(data).forEach(([key, value]) => {
-                    const pre = document.createElement('button');
-                    pre.textContent = `${key} - ${data[key]["Features"]} (Press For Game Link)`
-                    pre.onclick = () => window.open(data[key]["Game-Link"])
-                    putIn.appendChild(pre);
+                    const Button = document.createElement('button')
+                    const Features = document.createElement('pre')
+
+                    let FeaturesText = ""
+
+                    Object.entries(data[key]["Features"]).forEach(([k, v]) => {
+                        FeaturesText = `${k} - ${v}\n`+FeaturesText
+                    })
+
+                    Button.textContent = `${key} - (Press For Game Link)`
+                    Button.onclick = () => window.open(data[key]["Game-Link"])
+                    
+                    Features.textContent = FeaturesText
+                    
+                    Parent.appendChild(Button);
+                    //Button.appendChild(Features)
                 })
             })
         </script>
