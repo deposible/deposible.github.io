@@ -1,21 +1,27 @@
 {
     "Custom PC Tycoon": {
-        "Features": "none",
+        "Features": {},
         "Game-Link": "https://roblox.com/",
         "Image": ""
     },
     "Project Lazarus": {
-        "Features": "none",
+        "Features": {
+
+        },
         "Game-Link": "https://roblox.com/",
         "Image": ""
     },
     "Entrenched WW1": {
-        "Features": "none",
+        "Features": {
+
+        },
         "Game-Link": "https://roblox.com/",
         "Image": ""
     },
     "Flee The Facility": {
-        "Features": "none",
+        "Features": {
+
+        },
         "Game-Link": "https://roblox.com/",
         "Image": ""
     }
