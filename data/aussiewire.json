@@ -18,7 +18,9 @@
             "Discord Webhook For Cash & Levels": "Sends updates on cash and levels to a Discord webhook."
         },
         "Game-Link": "https://www.roblox.com/games/185655149",
-        "Image": ""
+        "Image": "",
+        "rscripts": "",
+        "ScriptBlox": ""
     },
     "Murder Mystery 2": {
         "Features": {
@@ -78,7 +80,9 @@
             "Enable Webhook": "Enables the webhook to track in-game events."
         },
         "Game-Link": "https://www.roblox.com/games/142823291",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     },
     "Evade": {
         "Features": {
@@ -92,7 +96,9 @@
             "Grab Gingerbreads": "Automatically collects gingerbread items on the map."
         },
         "Game-Link": "https://www.roblox.com/games/9872472334",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     },
     "Blade Ball": {
         "Features": {
@@ -116,7 +122,9 @@
             "Join FFA [Blade Ball Ranked Feature]": "Automatically joins the free-for-all ranked mode in Blade Ball."
         },
         "Game-Link": "https://www.roblox.com/games/13772394625",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     },
     "Driving Empire": {
         "Features": {
@@ -138,7 +146,9 @@
             "Webhook [Miles & Cash": "Sends mileage and cash updates to a webhook."
         },
         "Game-Link": "https://www.roblox.com/games/3351674303",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     },
     "Fisch": {
         "Features": {
@@ -190,7 +200,9 @@
             "Teleport To Totem": "Teleports you to the nearest totem."
         },
         "Game-Link": "https://www.roblox.com/games/16732694052",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     },
     "Grace": {
         "Features": {
@@ -204,12 +216,16 @@
             "Breaker ESP": "Highlights electrical breakers through walls and objects."
         },
         "Game-Link": "https://www.roblox.com/games/138837502355157",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     },
     "Pet Simulator 99": {
         "Features": {},
         "Game-Link": "https://www.roblox.com/games/8737899170",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     },
     "Restaurant Tycoon 2": {
         "Features": {
@@ -226,7 +242,9 @@
             "Instant NPCS": "Instantly completes tasks assigned to NPCs."
         },
         "Game-Link": "https://www.roblox.com/games/3398014311",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     },
     "Gut & Blackpowder": {
         "Features": {
@@ -259,6 +277,8 @@
             "Round INF [1 Map Supported]": "Sets the game round to infinite on one supported map."
         },
         "Game-Link": "https://www.roblox.com/games/12334109280",
-        "Image": ""
+        "Image": "",
+         "rscripts": "",
+        "ScriptBlox": ""
     }
 }
