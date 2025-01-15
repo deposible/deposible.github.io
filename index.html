@@ -56,18 +56,20 @@
         <script>
             function CreateMenu(data, parent, a, b, c, d) { // d will be features duh
                 const Button = document.createElement('button')
-                
+                const spc = document.createElement('pre')
                 Button.textContent = `${a} - (Press For Game Link)`
                 Button.onclick = () => window.open(data[a]["Game-Link"])
                 
                 parent.appendChild(Button);
-
+                Button.appendChild(spc)
+                
                 if (data[a]["ScriptBlox"] !== "") {
                     const ScriptBloxPost = document.createElement('button')
 
                     ScriptBloxPost.textContent = "Scriptblox.com Post"
                     ScriptBloxPost.onclick = () => window.open(data[a]["ScriptBlox"])
-
+                    ScriptBloxPost.style.backgroundColor = '#800080'
+                    ScriptBloxPost.style.color = '#ffff'
                     Button.appendChild(ScriptBloxPost)
                 }
                 if (data[a]["rscripts"] !== "") {
@@ -75,7 +77,8 @@
 
                     RScriptsPost.textContent = "RScripts.net Post"
                     RScriptsPost.onclick = () => window.open(data[a]["rscripts"])
-
+                    RScriptsPost.style.backgroundColor = '#202A44'
+                    RScriptsPost.style.color = '#ffff'
                     Button.appendChild(RScriptsPost)
                 }
             }
