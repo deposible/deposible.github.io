@@ -54,26 +54,37 @@
         </footer>
 
         <script>
+            function CreateMenu(data, parent, a, b, c, d) { // d will be features duh
+                const Button = document.createElement('button')
+                
+                Button.textContent = `${a} - (Press For Game Link)`
+                Button.onclick = () => window.open(data[a]["Game-Link"])
+                
+                parent.appendChild(Button);
+
+                if (data[a]["ScriptBlox"] !== "") {
+                    const ScriptBloxPost = document.createElement('button')
+
+                    ScriptBloxPost.textContent = "Scriptblox.com Post"
+                    ScriptBloxPost.onclick = () => window.open(data[a]["ScriptBlox"])
+
+                    Button.appendChild(ScriptBloxPost)
+                }
+                if (data[a]["rscripts"] !== "") {
+                    const RScriptsPost = document.createElement('button')
+
+                    RScriptsPost.textContent = "RScripts.net Post"
+                    RScriptsPost.onclick = () => window.open(data[a]["rscripts"])
+
+                    Button.appendChild(RScriptsPost)
+                }
+            }
+
             fetch('data/aussiewire.json').then(response => response.json()).then(data => {
                 const Parent = document.getElementById('AussieWire')
 
                 Object.entries(data).forEach(([key, value]) => {
-                    const Button = document.createElement('button')
-                    const Features = document.createElement('pre')
-
-                    let FeaturesText = ""
-
-                    Object.entries(data[key]["Features"]).forEach(([k, v]) => {
-                        FeaturesText = `${k} - ${v}\n`+FeaturesText
-                    })
-
-                    Button.textContent = `${key} - (Press For Game Link)`
-                    Button.onclick = () => window.open(data[key]["Game-Link"])
-                    
-                    Features.textContent = FeaturesText
-                    
-                    Parent.appendChild(Button);
-                    //Button.appendChild(Features)
+                    CreateMenu(data, Parent, key)
                 })
             })
 
@@ -81,24 +92,17 @@
                 const Parent = document.getElementById('ExposedAussieWire')
 
                 Object.entries(data).forEach(([key, value]) => {
-                    const Button = document.createElement('button')
-                    const Features = document.createElement('pre')
-
-                    let FeaturesText = ""
-
-                    Object.entries(data[key]["Features"]).forEach(([k, v]) => {
-                        FeaturesText = `${k} - ${v}\n`+FeaturesText
-                    })
-
-                    Button.textContent = `${key} - (Press For Game Link)`
-                    Button.onclick = () => window.open(data[key]["Game-Link"])
-                    
-                    Features.textContent = FeaturesText
-                    
-                    Parent.appendChild(Button);
-                    //Button.appendChild(Features)
+                    CreateMenu(data, Parent, key)
                 })
             })
+
+            //const Features = document.createElement('pre')
+            //let FeaturesText = ""
+            //Object.entries(data[key]["Features"]).forEach(([k, v]) => {
+            //    FeaturesText = `${k} - ${v}\n`+FeaturesText
+            //})
+            //Features.textContent = FeaturesText
+            //Button.appendChild(Features)
         </script>
     </body>
 </html>
