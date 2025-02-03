@@ -7,7 +7,7 @@ getgenv().deposibleontop = {
   ["Flood Global Chat"] = false,
   ["Alot Of Credits"] = false,
   ["Alot Of Spins"] = false
-} -- I recoded this entire thing so you can steal it! even tho the game got removed here is the old source so you can learn.
+} -- I recoded this entire thing so you can steal it! even tho the game got removed here is the old source so you can learn. (Not Straight source but just a watered down version so its easy to comprehend
 
 local newtask = function(delay, val, callback) 
   task.spawn(function()
