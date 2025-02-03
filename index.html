@@ -14,22 +14,21 @@
             font-size:30px;
         }
         li {
-            color: white;
+            color: rgb(255, 255, 255);
             list-style-type: none;
         }
         ul {
             text-align: center;
         }
         button {
-            width: 80%;
+            width: 300px;
+            height: 300px;
             text-wrap: true;
         }
         div {
             padding: 25px;
             justify-content: center;
             align-items: center;
-            display: flex;
-            flex-direction: column;
         }
     </style>
 
@@ -42,11 +41,10 @@
     </head>
 
     <body>
-        <div id="AussieWire">
-            <h1>Aussie WIRE</h1>
-        </div>
+        <h1>Aussie WIRE</h1>
+        <div id="AussieWire"></div>
 
-        <h1>Exposed Aussie WIRE</h1>
+        <h1>Legacy Aussie WIRE</h1>
         <div id="ExposedAussieWire"></div>
 
         <footer>
@@ -54,32 +52,59 @@
         </footer>
 
         <script>
+            function AutoChange(a) {
+                a.style.backgroundSize = 'cover'
+                a.style.backgroundPosition = 'center'
+                a.style.width = '40px'
+                a.style.height = '40px'
+                a.style.border = 'none'
+                a.style.borderRadius = '6px'
+            }
             function CreateMenu(data, parent, a, b, c, d) { // d will be features duh
                 const Button = document.createElement('button')
                 const spc = document.createElement('pre')
+
                 Button.textContent = `${a} - (Press For Game Link)`
                 Button.onclick = () => window.open(data[a]["Game-Link"])
-                
+                Button.style.backgroundColor = 'grey'
+                Button.style.border = 'none'
+                Button.style.borderRadius = '2px'
+
                 parent.appendChild(Button);
                 Button.appendChild(spc)
                 
-                if (data[a]["ScriptBlox"] !== "") {
+                if (data[a]["ScriptBlox"] && data[a]["ScriptBlox"] !== "") {
                     const ScriptBloxPost = document.createElement('button')
 
-                    ScriptBloxPost.textContent = "Scriptblox.com Post"
                     ScriptBloxPost.onclick = () => window.open(data[a]["ScriptBlox"])
-                    ScriptBloxPost.style.backgroundColor = '#800080'
-                    ScriptBloxPost.style.color = '#ffff'
+                    ScriptBloxPost.style.backgroundImage = 'url("./Images/scriptbloxicon.png")'
+                    AutoChange(ScriptBloxPost)
                     Button.appendChild(ScriptBloxPost)
                 }
-                if (data[a]["rscripts"] !== "") {
+                if (data[a]["rscripts"] && data[a]["rscripts"] !== "") {
                     const RScriptsPost = document.createElement('button')
 
-                    RScriptsPost.textContent = "RScripts.net Post"
                     RScriptsPost.onclick = () => window.open(data[a]["rscripts"])
-                    RScriptsPost.style.backgroundColor = '#202A44'
-                    RScriptsPost.style.color = '#ffff'
+                    RScriptsPost.style.backgroundImage = 'url("./Images/rscriptsicon.png")'
+                    AutoChange(RScriptsPost)
                     Button.appendChild(RScriptsPost)
+                }
+                if (data[a]["roblox-scripter"] && data[a]["roblox-scripter"] !== "") {
+                    const robloxscripters = document.createElement('button')
+
+                    robloxscripters.textContent = "roblox-scripter.com Post"
+                    robloxscripters.onclick = () => window.open(data[a]["roblox-scripter"])
+                    
+                    AutoChange(robloxscripters)
+                    Button.appendChild(robloxscripters)
+                }
+                if (data[a]["robloxscripts"] && data[a]["robloxscripts"] !== "") {
+                    const robloxscripts = document.createElement('button')
+
+                    robloxscripts.onclick = () => window.open(data[a]["robloxscripts"])
+                    robloxscripts.style.backgroundImage = 'url("./Images/robloxscripts.gg.png")'
+                    AutoChange(robloxscripts)
+                    Button.appendChild(robloxscripts)
                 }
             }
 
@@ -98,14 +123,6 @@
                     CreateMenu(data, Parent, key)
                 })
             })
-
-            //const Features = document.createElement('pre')
-            //let FeaturesText = ""
-            //Object.entries(data[key]["Features"]).forEach(([k, v]) => {
-            //    FeaturesText = `${k} - ${v}\n`+FeaturesText
-            //})
-            //Features.textContent = FeaturesText
-            //Button.appendChild(Features)
         </script>
     </body>
 </html>
