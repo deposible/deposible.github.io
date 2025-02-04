@@ -78,7 +78,7 @@
                 Image.style.height = '50%'
                 Image.style.width = '100%'
                 Image.style.backgroundSize = 'cover'
-                Image.style.backgroundImage = `url("./Images/games/${a}.png")`
+                Image.style.backgroundImage = `url("./images/games/${a}.png")`
 
                 parent.appendChild(Button);
                 Button.appendChild(Image)
@@ -88,7 +88,7 @@
                     const ScriptBloxPost = document.createElement('button')
 
                     ScriptBloxPost.onclick = () => window.open(data[a]["ScriptBlox"])
-                    ScriptBloxPost.style.backgroundImage = 'url("./Images/scriptbloxicon.png")'
+                    ScriptBloxPost.style.backgroundImage = 'url("./images/scriptbloxicon.png")'
                     AutoChange(ScriptBloxPost)
                     Button.appendChild(ScriptBloxPost)
                 }
@@ -96,7 +96,7 @@
                     const RScriptsPost = document.createElement('button')
 
                     RScriptsPost.onclick = () => window.open(data[a]["rscripts"])
-                    RScriptsPost.style.backgroundImage = 'url("./Images/rscriptsicon.png")'
+                    RScriptsPost.style.backgroundImage = 'url("./images/rscriptsicon.png")'
                     AutoChange(RScriptsPost)
                     Button.appendChild(RScriptsPost)
                 }
@@ -113,7 +113,7 @@
                     const robloxscripts = document.createElement('button')
 
                     robloxscripts.onclick = () => window.open(data[a]["robloxscripts"])
-                    robloxscripts.style.backgroundImage = 'url("./Images/robloxscripts.gg.png")'
+                    robloxscripts.style.backgroundImage = 'url("./images/robloxscripts.gg.png")'
                     AutoChange(robloxscripts)
                     Button.appendChild(robloxscripts)
                 }
