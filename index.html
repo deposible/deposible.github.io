@@ -24,8 +24,12 @@
             width: 300px;
             height: 300px;
             text-wrap: true;
+            margin-right: 10px;
+            margin-bottom: 10px;
         }
         div {
+            display: flex;
+            flex-wrap: wrap;
             padding: 25px;
             justify-content: center;
             align-items: center;
@@ -48,7 +52,7 @@
         <div id="ExposedAussieWire"></div>
 
         <footer>
-            <pre style="text-align:center;color:white">Coded by deposible! join our discord: https://discord.gg/ymguJ6kQNK</pre>
+            <pre style="text-align:center;color:white">Coded by deposible! join our discord: https://discord.gg/aussiestudios</pre>
         </footer>
 
         <script>
@@ -61,6 +65,7 @@
                 a.style.borderRadius = '6px'
             }
             function CreateMenu(data, parent, a, b, c, d) { // d will be features duh
+                const Image = document.createElement('img')
                 const Button = document.createElement('button')
                 const spc = document.createElement('pre')
 
@@ -70,14 +75,20 @@
                 Button.style.border = 'none'
                 Button.style.borderRadius = '2px'
 
+                Image.style.height = '50%'
+                Image.style.width = '100%'
+                Image.style.backgroundSize = 'cover'
+                Image.style.backgroundImage = `url("./Images/games/${a}.png")`
+
                 parent.appendChild(Button);
+                Button.appendChild(Image)
                 Button.appendChild(spc)
                 
                 if (data[a]["ScriptBlox"] && data[a]["ScriptBlox"] !== "") {
                     const ScriptBloxPost = document.createElement('button')
 
                     ScriptBloxPost.onclick = () => window.open(data[a]["ScriptBlox"])
-                    ScriptBloxPost.style.backgroundImage = 'url("./images/scriptbloxicon.png")'
+                    ScriptBloxPost.style.backgroundImage = 'url("./Images/scriptbloxicon.png")'
                     AutoChange(ScriptBloxPost)
                     Button.appendChild(ScriptBloxPost)
                 }
@@ -85,7 +96,7 @@
                     const RScriptsPost = document.createElement('button')
 
                     RScriptsPost.onclick = () => window.open(data[a]["rscripts"])
-                    RScriptsPost.style.backgroundImage = 'url("./images/rscriptsicon.png")'
+                    RScriptsPost.style.backgroundImage = 'url("./Images/rscriptsicon.png")'
                     AutoChange(RScriptsPost)
                     Button.appendChild(RScriptsPost)
                 }
@@ -102,7 +113,7 @@
                     const robloxscripts = document.createElement('button')
 
                     robloxscripts.onclick = () => window.open(data[a]["robloxscripts"])
-                    robloxscripts.style.backgroundImage = 'url("./images/robloxscripts.gg.png")'
+                    robloxscripts.style.backgroundImage = 'url("./Images/robloxscripts.gg.png")'
                     AutoChange(robloxscripts)
                     Button.appendChild(robloxscripts)
                 }
