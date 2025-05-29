@@ -119,7 +119,7 @@ return {
     ["Auto Farm Win"] = "Farmer victoire auto",
     ["Auto Grab Ores"] = "Ramasser minerais auto",
     ["Auto Place Crystals"] = "Placer cristaux auto",
-    ["Buy Ores"] = "Acheter minerais"
+    ["Buy Ores"] = "Acheter minerais",
     ["Pet Farm"] = "Ferme d'Animaux",
     ["Shop"] = "Boutique",
     ["Enable Fly/Ride"] = "Activer Vol/Monture",
