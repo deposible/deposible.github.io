@@ -86,9 +86,6 @@
         "Game 1": { GameLink: "https://example.com/game1", Image: "/images/game1.png" },
         "Game 2": { GameLink: "https://example.com/game2", Image: "/images/game2.png" }
       },
-      "No Longer Updating": {
-        "Old Game": { GameLink: "https://example.com/oldgame", Image: "/images/oldgame.png" }
-      }
     };
 
     function createGameCard(name, data) {
@@ -104,8 +101,8 @@
     }
 
     const sectionMap = {
-      "Working Games": document.getElementById("working-section"),
-      "Potentially Unsafe Games": document.getElementById("unsafe-section"),
+      //"Working Games": document.getElementById("working-section"),
+      //"Potentially Unsafe Games": document.getElementById("unsafe-section"),
       "No Longer Updating": document.getElementById("dead-section"),
     };
 
