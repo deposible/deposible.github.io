@@ -36,7 +36,7 @@ return {
   {Image="Project_Lazarus.png", GameName="Project Lazarus", LastUpdated="2/2/2026", Status="Working"},
   {Image="Restaurant_Tycoon_2.png", GameName="Restaurant Tycoon 2", LastUpdated="2/1/2026", Status="Working"},
   {Image="Rocitizens.png", GameName="Rocitizens", LastUpdated="1/30/2026", Status="Working"},
-  {Image="Royal_High.png", GameName="Royal High", LastUpdated="Long Ago", Status="Working"},
+  {Image="Royal_High.png", GameName="Royal High", LastUpdated="Long Ago", Status="Unknown"},
   {Image="Saber_Simulator.png", GameName="Saber Simulator", LastUpdated="2/1/2026", Status="Working"},
   {Image="Slime_Slayer_Online.png", GameName="Slime Slayer", LastUpdated="Long Ago", Status="Broken"},
   {Image="Speed_Run_4.png", GameName="Speed Run 4", LastUpdated="2/1/2026", Status="Working"},
