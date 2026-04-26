@@ -7,7 +7,7 @@
 --      [UPPERCASE_LETTER] = "space-separated words"
 --
 --  Whitespace inside each block is split + deduped at consume time, so
---  newlines, tabs, and varied indentation are all fine.
+--  newlines, tabs, and varied indentation are all fine. dont change this file at all. to use it follow the above directions PERFECTLY! This is for games that require letters like word bomb or word naming games.
 -- ════════════════════════════════════════════════════════════════════════
 
 return {
